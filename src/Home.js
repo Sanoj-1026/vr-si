@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import bgImage from "./assets/bg.jpg"; 
 import logo from "./assets/logo.png"; 
@@ -10,11 +11,11 @@ function Home() {
         <img src={logo} alt="Logo" className="logo" />
         <nav className="navbar">
           <ul className="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#clients">Clients</a></li>
-            <li><a href="#careers">Careers</a></li>
+            <li><Link to="/">Home</Link></li> 
+            <li><Link to="/#about">About</Link></li>
+            <li><Link to="/#service">Service</Link></li>
+            <li><Link to="/#clients">Clients</Link></li>
+            <li><Link to="/#careers">Careers</Link></li>
           </ul>
         </nav>
       </header>
